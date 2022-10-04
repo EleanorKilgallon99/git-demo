@@ -2,27 +2,50 @@
 
 <head>
   <title>My Personal Website</title>
+  <link rel="stylesheet" href="MyWebsite.css" type="text/css" />
 </head>
 <body>
-  <header>
-    <h1>Personal Website: Eleanor Kilgallon</h1>
-  </header>
-  <section>
-    <h2>Introduction</h2>
-    <img
-      src="img/Image.jpeg"
-      alt="A profile photo of me"
-      width="200px"
-      height="200px"
-    />
-    <p>My name is Eleanor Kilgallon, and I am an aspiring Software Engineer. I am completing this website using the training developed on the THG Accelerator programme</p>
-    <a href="https://linkedin.com/in/eleanor-kilgallon-4380b3198">LinkedIn</a>
-    <p>please find my LinkedIn profile linked below</p>
-    
-    
+  <div class="navigation">
+    <header>
+      <h1>Personal Website: Eleanor Kilgallon</h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="hover"><a href="">Home</a></li>
+        <li class="hover"><a href="">Education</a></li>
+        <li class="hover"><a href="">Work Experience</a></li>
+      </ul>
+      <a href="" id="linkedin">LinkedIn</a>
+    </nav>
+  </div>
+  <section class="content">
+    <h2>Introduction:</h2>
+    <div class="media">
+      <div class="image">
+        <img
+          src="Image.jpeg"
+          alt="A profile photo of me"
+          width="200px"
+          height="200px"
+        />
+      </div>
+      <div class="intro_content">
+        <p>
+          My name is Eleanor Kilgallon, and I am an aspiring Software Engineer.
+          I am completing this website using the training developed on the THG
+          Accelerator programme
+        </p>
+        <p>Please find my LinkedIn profile linked below:</p>
+        <a
+          href="https://linkedin.com/in/eleanor-kilgallon-4380b3198"
+          id="linkedin"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Education</h2>
+  <section class="content">
+    <h2>Education:</h2>
     <p>
       I am university educated with degrees from both the University of Lincoln
       and the University of Sheffield. The completion of both these degrees
@@ -87,8 +110,8 @@
       </tr>
     </table>
   </section>
-  <section>
-    <h2>Work History</h2>
+  <section class="content">
+    <h2>Work History:</h2>
     <ul>
       <li>THG Accelerator: Sept 2022 - present</li>
       <ul>
