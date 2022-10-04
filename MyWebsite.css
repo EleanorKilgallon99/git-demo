@@ -101,9 +101,19 @@ img {
 .content {
   position: relative;
   padding: 16px;
-  top: 150px;
+  top: 125px;
   padding: 20px;
-  background-color: #fffdff;
+  border-radius: 10px;
+  text-align: justify;
+  height: 100px;
+  min-width: 300px;
+}
+
+.edu_content {
+  position: relative;
+  padding: 16px;
+  top: 125px;
+  padding: 20px;
   border-radius: 10px;
   text-align: justify;
   height: 100px;
@@ -133,4 +143,21 @@ h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 100;
   border-radius: 10px;
+  width: auto;
+}
+
+#dissertation {
+  position: relative;
+  padding: 16px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  height: 75px;
+  min-width: 300px;
+  width: 100%;
+  background-color: #fffdff;
+}
+
+li {
+  background-color: #fffdff;
 }
