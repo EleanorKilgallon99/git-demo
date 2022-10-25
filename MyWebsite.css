@@ -86,46 +86,6 @@ nav {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
-  .nav-center {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #fffdff;
-    height: 75px;
-  }
-
-  .nav-header {
-    padding: 0;
-  }
-  .nav-toggle {
-    display: none;
-  }
-
-  #links {
-    height: auto;
-    display: flex;
-    list-style: none;
-  }
-
-  #links li {
-    background-color: #fffdff;
-  }
-
-  #links a {
-    padding: 0;
-    margin: 0 5px;
-    text-decoration: none;
-  }
-  #links a:hover {
-    padding: 0;
-    background: transparent;
-  }
-}
-
 .content {
   display: flex;
   align-items: flex-start;
