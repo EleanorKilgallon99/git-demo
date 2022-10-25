@@ -6,18 +6,21 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="topnav">
-      <a href="index.html" class="active">Eleanor Kilgallon</a>
-      <div id="myLinks">
-        <a href="education.html" id="pages">Education</a>
-        <a href="workex.html" id="pages">Work Experience</a>
+  <nav>
+    <div class="nav-center">
+      <div id="nav-header">
+        <h1 class="logo">Eleanor Kilgallon</h1>
+        <button class="nav-toggle" onclick="myFunction()">
+          <p class="menu">&#9776;</p>
+        </button>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <p class="menu">&#9776;</p>
-      </a>
+      <ul id="links">
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="education.html">Education</a></li>
+        <li class="item"><a href="workex.html">Work Experience</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
   <section class="edu_content">
     <h2>Education:</h2>
     <div>
