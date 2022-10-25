@@ -10,66 +10,64 @@
   box-sizing: border-box;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #fffdff;
-  position: relative;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-#pages {
-  background-color: #fffdff;
-  text-align: right;
-  font-size: 20px;
-  height: 25px;
-}
-
-#pages:hover {
-  background-color: #d0abab;
-}
-
-.topnav a {
-  color: #2a2a2a;
-  font-size: 30px;
+h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: #2a2a2a;
+  background-color: #fffdff;
   font-weight: 400;
+  font-size: 30px;
+}
+
+nav {
+  background-color: #fffdff;
+}
+
+#nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #fffdff;
+  height: 75px;
+}
+
+.nav-toggle {
+  font-size: 25px;
+  color: #2a2a2a;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  align-items: right;
+}
+
+.nav-toggle:hover {
+  color: #d0abab;
+}
+
+.menu {
+  background-color: #fffdff;
+}
+
+#links a {
+  color: #2a2a2a;
+  background-color: #fffdff;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+  padding: 5px, 10px;
   text-decoration: none;
-  display: block;
-  height: 50px;
+  text-align: right;
 }
 
-.topnav a.icon {
-  background: #fffdff;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.topnav a:hover {
+#links :hover {
   background-color: #d0abab;
   color: #fffdff;
+  padding-left: 10px;
 }
 
-.topnav .active {
-  background-color: #fffdff;
-  color: #2a2a2a;
-}
-
-.topnav .menu {
-  background-color: #fffdff;
-  color: #2a2a2a;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  height: 50px;
-}
-
-.topnav .menu:hover {
-  background-color: #d0abab;
-  color: #fffdff;
+#links .item li a {
+  display: none;
 }
 
 #linkedin {
@@ -84,12 +82,56 @@
   background-color: #d0abab;
 }
 
+.icon {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fffdff;
+    height: 75px;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  #links {
+    height: auto;
+    display: flex;
+    list-style: none;
+  }
+
+  #links li {
+    background-color: #fffdff;
+  }
+
+  #links a {
+    padding: 0;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  #links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
 .content {
   display: flex;
   align-items: flex-start;
   position: relative;
   padding: 20px;
-  top: 50px;
+  top: 10px;
   text-align: justify;
   height: 300px;
   min-width: 300px;
